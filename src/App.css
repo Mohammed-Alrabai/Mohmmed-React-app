@@ -1,0 +1,133 @@
+:root {
+  --primary-color: #006dc6;
+}
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: #E5E5E5;
+}
+.App {
+  padding: 0 10rem;
+  background-color: #E5E5E5;
+}
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+}
+.Navbar .logo {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+.Navbar ul {
+  display: flex;
+  list-style: none;
+}
+.Navbar ul li {
+  padding: 0.5rem 1rem;
+  color: black;
+  cursor: pointer;
+}
+.Navbar ul li:hover {
+  color: var(--primary-color);
+}
+.hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 10rem;
+  position: relative;
+  z-index: 2;
+}
+.image-hero img{
+  width: 450px;
+  border-radius: 50%;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 0rem;
+}
+.social-media{
+  display: flex;
+  list-style: none;
+
+}
+.social-media a{
+  padding: 0.5rem;
+  color: black;
+  font-size: 1rem;
+  text-decoration: none;
+}
+.social-media a:hover{
+  color: var(--primary-color);
+}
+.icon{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  z-index: 1;
+}
+.company-layout{
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+
+}
+.company-box{
+  flex: 1;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.11);
+}
+.companies-item{
+  width: 100%;
+  font-size: 18px;
+  padding: 1rem;
+}
+.companies-item img{
+  border-radius: 10px;
+  width: 100%;
+}
+.companies-name{
+  font-size: 18px;
+  font-weight: 500;
+  text-align: left;
+  padding-left: 10px;
+}
+.companies-item h2,h3 {
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: left;
+}
+.services-item{
+  width: 100%;
+  padding: 1rem;
+}
+.services-item h2,h3 {
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: left;
+}
+.programers-item{
+  width: 100%;
+  padding: 1rem;
+}
+.programers-item h2,h3 {
+  padding: 5px 10px;
+  font-size: 18px;
+  text-align: left;
+}
+
